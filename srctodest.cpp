@@ -1,5 +1,5 @@
 //c++ program to reach destination from source using recursion
-#include<iostream> 
+#include<bits/stdc++.h> 
 using namespace std;
 
 void reachHome(int src, int dest) {
@@ -7,8 +7,8 @@ void reachHome(int src, int dest) {
     cout << "source " << src  << " destination " << dest << endl;
     //base case
     if(src == dest) {
-        cout << " pahuch gya " << endl;
-        return ;
+        cout << " pahuch gya " << "\n";
+        return;
     }
 
     //processing - ek step aage badhjao
@@ -24,10 +24,9 @@ int main() {
     int dest = 10;
     int src = 1;
 
-    cout << endl;
+    cout << "\n";
 
     reachHome(src, dest);
-
 
     return 0;
 }
